@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const App = () => {
   return (
-    <main className="max-w-7xl mx-auto">
+    <main className="max-w-7xl mx-auto relative">
       <Navbar />
     </main>
   );
