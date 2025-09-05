@@ -10,7 +10,11 @@ const HeroCamera = ({ children, isMobile }) => {
       easing.damp3(state.camera.position, [0, 3, 25], 0.25, delta);
     }
   });
-  return <group ref={groupRef}>{children}</group>;
+  return (
+    <group ref={groupRef} scale={isMobile ? 1 : 1.3}>
+      {children}
+    </group>
+  );
 };
 
 export default HeroCamera;
